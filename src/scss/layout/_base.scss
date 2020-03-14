@@ -1,0 +1,135 @@
+/**
+ * !!! 変数の定義 !!!
+ * 変数は作りすぎず、デザインコンポーネント、もしくはシンボルを元に作成する
+ * またGoogle Font等の特殊なウェブフォントの場合、そのフォント名を定義してわかりやすくする
+ */
+$gothic: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+$serif: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+
+
+/**
+ * !!! ブレークポイント !!!
+ */
+@mixin PC {
+  @include min-screen(768px) {
+    @content;
+  }
+}
+@mixin SP {
+  @include max-screen(767px) {
+    @content;
+  }
+}
+.pc {
+  @include SP {
+    display: none !important;
+  }
+}
+.sp {
+  @include PC {
+    display: none !important;
+  }
+}
+
+/**
+ * !!! browsersyncのアラートを非表示 !!!
+ */
+#__bs_notify__ {
+  display: none !important;
+}
+
+
+/**
+ * !!! ページCSS基本設定 !!!
+ * 基本的にこの箇所は操作しないようにする
+ * ----------------ここから----------------
+ */
+ html {
+	font-size: 62.5%;
+	font-family: $gothic;
+}
+*{
+	@include font-size(14);
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: none;
+}
+
+button,
+input[type="submit"],
+input[type="button"] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+    &::-webkit-search-decoration {
+      display: none;
+    }
+    &::focus {
+      outline-offset: -2px;
+    }
+}
+
+.row {
+  @include clearfix;
+}
+/**
+ * ----------------ここまで----------------
+ */
+
+ 
+/**
+ * !!! FlexBox Rule !!!
+ * 都度scssを記載するのではなく、クラスで定義し、クラスの付け外しで管理すること。
+ */
+
+.flex-row {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+
+/**
+ * !!! Inner Rule !!!
+ * 最初にデザインを確認し、存在するinnerパターンを作成すること
+ * max-width指定のみだと、画面幅を縮小するときに余白が消えるため、paddingをつけること
+ * 例) innerが1000pxであれば、
+ *     max-width: 1060px;
+ *     padding: 0 30px;
+ */
+
+.inner {
+  max-width: 1060px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+// .inner-large {
+// }
+// .inner-medium {
+// }
+// .inner-small {
+// }
