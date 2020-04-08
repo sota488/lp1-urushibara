@@ -15,10 +15,6 @@ include($path.'libs/meta.php');
 <script src="../dist/js/common.min.js"></script> 
 </head>
 
-
-
-</head>
-
 <body class="top">
 <nav>
 	<div class="mainnav inner flex-row">
