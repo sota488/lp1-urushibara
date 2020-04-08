@@ -185,6 +185,9 @@ input[type="button"] {
   max-width: 1060px;
   padding: 0 30px;
   margin: 0 auto;
+  @include SP {
+    padding: 0 15px;
+  }
 }
 
 // .inner-large {

@@ -1,3 +1,81 @@
 .header {
-  
+  padding: 15px 30px;
+  align-items: center;
+  background: #e4007f;
+  @include SP {
+    padding: 15px 15px;
+  }
+  &__brand {
+    a {
+      display: block;
+      img {
+        height: 43px;
+        @include SP {
+          height: 28px;
+        }
+      }
+    }
+  }
+  &__nav {
+    @include SP {
+      display: none;
+    }
+    ul {
+      li {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 45px;
+        a {
+          display: block;
+          color: #fff;
+          @include font-size(14);
+          font-weight: bold;
+          @include letter-spacing(200);
+          position: relative;
+          &:before {
+            content: "";
+            width: 0px;
+            left: 0;
+            bottom: -10px;
+            background: #fff;
+            height: 6px;
+            transition: all 0.3s;
+            position: absolute;
+          }
+          &:hover {
+            &:before {
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__trigger {
+    a {
+      display: block;
+      width: 20px;
+      height: 18px;
+      position: relative;
+      span {
+        background: #fff;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        &:nth-child(1) {
+          top: -12px;
+        }
+        &:nth-child(2) {
+        }
+        &:nth-child(3) {
+          bottom: -12px;
+        }
+      }
+    }
+  }
 }
