@@ -1,11 +1,71 @@
+@font-face {
+  font-family: "Noto Sans Japanese";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../font/NotoSansCJKjp-Thin.eot"); /* IE9 Compat Modes */
+  src: url("../font/NotoSansCJKjp-Thin.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../font/NotoSansCJKjp-Thin.woff") format("woff"),
+    /* Modern Browsers */ url("../font/NotoSansCJKjp-Thin.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Noto Sans Japanese";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../font/NotoSansCJKjp-Light.eot");
+  src: url("../font/NotoSansCJKjp-Light.eot?#iefix") format("embedded-opentype"),
+    url("../font/NotoSansCJKjp-Light.woff") format("woff"), url("../font/NotoSansCJKjp-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans Japanese";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../font/NotoSansCJKjp-DemiLight.eot");
+  src: url("../font/NotoSansCJKjp-DemiLight.eot?#iefix") format("embedded-opentype"),
+    url("../font/NotoSansCJKjp-DemiLight.woff") format("woff"),
+    url("../font/NotoSansCJKjp-DemiLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans Japanese";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/NotoSansCJKjp-Regular.eot");
+  src: url("../font/NotoSansCJKjp-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../font/NotoSansCJKjp-Regular.woff") format("woff"),
+    url("../font/NotoSansCJKjp-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans Japanese";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../font/NotoSansCJKjp-Medium.eot");
+  src: url("../font/NotoSansCJKjp-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../font/NotoSansCJKjp-Medium.woff") format("woff"), url("../font/NotoSansCJKjp-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans Japanese";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../font/NotoSansCJKjp-Bold.eot");
+  src: url("../font/NotoSansCJKjp-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../font/NotoSansCJKjp-Bold.woff") format("woff"), url("../font/NotoSansCJKjp-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans Japanese";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../font/NotoSansCJKjp-Black.eot");
+  src: url("../font/NotoSansCJKjp-Black.eot?#iefix") format("embedded-opentype"),
+    url("../font/NotoSansCJKjp-Black.woff") format("woff"), url("../font/NotoSansCJKjp-Black.ttf") format("truetype");
+}
 /**
  * !!! 変数の定義 !!!
  * 変数は作りすぎず、デザインコンポーネント、もしくはシンボルを元に作成する
  * またGoogle Font等の特殊なウェブフォントの場合、そのフォント名を定義してわかりやすくする
  */
-$gothic: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+$gothic: "Noto Sans Japanese", "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ",
+  "Meiryo", sans-serif;
 $serif: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
-
 
 /**
  * !!! ブレークポイント !!!
@@ -38,28 +98,30 @@ $serif: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho Pr
   display: none !important;
 }
 
-
 /**
  * !!! ページCSS基本設定 !!!
  * 基本的にこの箇所は操作しないようにする
  * ----------------ここから----------------
  */
- html {
-	font-size: 62.5%;
-	font-family: $gothic;
+html {
+  font-size: 62.5%;
+  font-family: $gothic;
 }
-*{
-	@include font-size(14);
-	box-sizing: border-box;
+body {
+  background: #e4007f;
+}
+* {
+  @include font-size(14);
+  box-sizing: border-box;
 }
 img {
-	max-width: 100%;
-	height: auto;
-	vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
 }
-a{
-	color: inherit;
-	text-decoration: none;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 input[type="text"],
@@ -81,12 +143,12 @@ input[type="button"] {
   appearance: button;
   border: none;
   box-sizing: border-box;
-    &::-webkit-search-decoration {
-      display: none;
-    }
-    &::focus {
-      outline-offset: -2px;
-    }
+  &::-webkit-search-decoration {
+    display: none;
+  }
+  &::focus {
+    outline-offset: -2px;
+  }
 }
 
 .row {
@@ -96,7 +158,6 @@ input[type="button"] {
  * ----------------ここまで----------------
  */
 
- 
 /**
  * !!! FlexBox Rule !!!
  * 都度scssを記載するのではなく、クラスで定義し、クラスの付け外しで管理すること。
@@ -110,7 +171,6 @@ input[type="button"] {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-
 
 /**
  * !!! Inner Rule !!!
