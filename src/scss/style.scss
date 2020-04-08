@@ -6,3 +6,75 @@
 @import 'layout/**/*';
 @import 'component/**/*';
 @import 'page/**/*';
+
+
+body{
+    background-color:#e4007f;
+}
+// 追従グローバルメニュー
+.mainnav{
+    background-color:#e4007f;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    transition: .5s;
+    width: 100%;
+    z-index: 999;
+ }
+.hide{
+    transform: translateY(-100%);
+}
+
+nav{
+    height:50px;
+   }
+nav>.flex-row{
+     align-items: center;
+     height:50px; 
+   }
+.flex-row{
+    li{
+     margin-left:30px;
+     list-style:none;
+   }}
+.logo a{
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+   } 
+li a{
+     color:white;
+     text-decoration:none;
+   }
+
+.header-img{
+    img{width:94%;
+        text-align:left;
+    }
+}
+
+.sc-banner {/*親div*/
+    position: relative;
+    position: fixed;
+    top: 50px; 
+    right: 0px;
+    writing-mode: vertical-rl;
+    img{
+        width:50px;
+        height:200px;
+        text-align:right;
+    }
+    .en-map{
+        position: absolute;/*絶対配置*/
+        color: #e4007f;
+        top: 20px;
+        left: 20px;
+        font-size:30px;
+    }
+    .ja-map{
+        position: absolute;/*絶対配置*/
+        color: #e4007f;
+        top: 50px;
+        right: 30px;
+        font-size:16px;
+        }}

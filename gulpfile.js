@@ -163,7 +163,7 @@ gulp.task('images', function(){
 	.pipe(newer(imageDir))
 	.pipe(imagemin([
 		pngquant({
-			quality: '65-80',
+			quality: [.65, .8],
 			speed: 1,
 			floyd: 0
 		}),
@@ -233,7 +233,7 @@ gulp.task('browser-sync', function() {
 
 
 
-// Watch
+// cd
 // ---------------------------------------------------------------------------
 gulp.task('watch', function(){
 	watch([
