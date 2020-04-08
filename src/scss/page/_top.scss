@@ -2,4 +2,100 @@
 
  */
 body.top {
+  #main {
+    position: relative;
+    &__image {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: calc(100% - 80px);
+      padding: relative;
+      height: calc(100vh - 73px);
+    }
+    &__cap {
+      position: absolute;
+      right: 180px;
+      top: 50%;
+      @include transform(translateY(-50%));
+      img {
+        height: 465px;
+      }
+    }
+    &__scroll {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 2;
+      a {
+        color: #fff;
+        font-size: 14px;
+        font-size: 1.4rem;
+        letter-spacing: 0.1em;
+        position: absolute;
+        width: 300px;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        overflow: hidden;
+        &:before {
+          content: "";
+          width: 80px;
+          height: 1px;
+          position: absolute;
+          left: 72px;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          background: #fff;
+          -webkit-animation: sizeScale 2.5s infinite ease-out;
+          -moz-animation: sizeScale 2.5s infinite ease-out;
+          animation: sizeScale 2.5s infinite ease-out;
+          -webkit-animation-fill-mode: both;
+          -moz-animation-fill-mode: both;
+          animation-fill-mode: both;
+        }
+      }
+    }
+  }
+
+  #sec01 {
+    padding-top: 30px;
+    .flex-row {
+      > div {
+        width: 48%;
+        position: relative;
+        &:before {
+          z-index: 1;
+          position: absolute;
+          width: 100%;
+          content: "";
+          display: block;
+          height: 100%;
+          top: 5px;
+          left: 5px;
+          border: 1px solid #fff;
+        }
+        a {
+          display: block;
+          text-align: center;
+          color: #e4007f;
+          background: #fff;
+          z-index: 2;
+          position: relative;
+          @include font-size(24);
+          font-weight: bold;
+          @include letter-spacing(200);
+          padding: 15px 0;
+        }
+      }
+    }
+  }
 }

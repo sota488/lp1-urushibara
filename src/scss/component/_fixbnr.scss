@@ -1,0 +1,17 @@
+#fixbnr {
+  position: fixed;
+  right: 0;
+  top: 30%;
+  z-index: 1000;
+  a {
+    display: block;
+    opacity: 1;
+    transition: all 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+    img {
+      width: 105px;
+    }
+  }
+}

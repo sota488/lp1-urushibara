@@ -109,6 +109,10 @@ html {
 }
 body {
   background: #e4007f;
+  padding-top: 73px;
+  @include SP {
+    padding-top: 58px;
+  }
 }
 * {
   @include font-size(14);

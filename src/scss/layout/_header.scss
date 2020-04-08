@@ -2,6 +2,11 @@
   padding: 15px 30px;
   align-items: center;
   background: #e4007f;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   @include SP {
     padding: 15px 15px;
   }
