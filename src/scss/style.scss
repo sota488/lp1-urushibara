@@ -14,7 +14,7 @@ body{
 // 追従グローバルメニュー
 .mainnav{
     background-color:#e4007f;
-    padding: 20px;
+    padding: 0 20px;
     position: fixed;
     top: 0;
     transition: .5s;
@@ -37,11 +37,13 @@ nav>.flex-row{
      margin-left:30px;
      list-style:none;
    }}
-.logo a{
-    color:white;
-    font-size:20px;
-    font-weight:bold;
-   } 
+.logo {
+    width:30%;
+    height:100%;
+    img{
+    width: 100%;
+    height:100%
+   }} 
 li a{
      color:white;
      text-decoration:none;
@@ -53,28 +55,29 @@ li a{
     }
 }
 
+//スクロールバナー
 .sc-banner {/*親div*/
     position: relative;
     position: fixed;
-    top: 50px; 
+    top: 120px; 
     right: 0px;
     writing-mode: vertical-rl;
     img{
-        width:50px;
-        height:200px;
+        width:80px;
+        height:180px;
         text-align:right;
     }
     .en-map{
         position: absolute;/*絶対配置*/
         color: #e4007f;
         top: 20px;
-        left: 20px;
+        right: 15px;
         font-size:30px;
     }
     .ja-map{
         position: absolute;/*絶対配置*/
         color: #e4007f;
         top: 50px;
-        right: 30px;
+        left: 10px;
         font-size:16px;
         }}
