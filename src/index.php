@@ -4,6 +4,8 @@ include_once($path.'app_config.php');
 include($path.'libs/meta.php');
 
 ?>
+
+
 </head>
 
 <body class="top">

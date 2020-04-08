@@ -9,7 +9,7 @@
 
 
 body{
-    background-color:#e4007f;
+    background:linear-gradient(90deg,white 0%,white 1.5%,#e4007f 1.5%,#e4007f 100%);
 }
 // 追従グローバルメニュー
 .mainnav{
@@ -50,8 +50,17 @@ li a{
    }
 
 .header-img{
-    img{width:94%;
-        text-align:left;
+    width:94%;
+    text-align:left;
+    position:relative;
+    .header-main{
+        width:100%;
+    }    
+    .event-img{
+        width:100%;
+        position:absolute;
+        right: 40px;
+        top: 80px;
     }
 }
 
@@ -70,14 +79,19 @@ li a{
     .en-map{
         position: absolute;/*絶対配置*/
         color: #e4007f;
-        top: 20px;
+        top: 15px;
         right: 15px;
         font-size:30px;
     }
     .ja-map{
         position: absolute;/*絶対配置*/
         color: #e4007f;
-        top: 50px;
+        top: 40px;
         left: 10px;
         font-size:16px;
-        }}
+    }}
+
+    .space{
+        width:100%;
+        height:3000px;
+    }
