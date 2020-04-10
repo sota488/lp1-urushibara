@@ -11,14 +11,24 @@ body.top {
       width: calc(100% - 80px);
       padding: relative;
       height: calc(100vh - 73px);
+      @include SP {
+        width: 100%;
+        height: 240px;
+      }
     }
     &__cap {
       position: absolute;
       right: 180px;
       top: 50%;
       @include transform(translateY(-50%));
+      @include SP {
+        right: 20px;
+      }
       img {
         height: 465px;
+        @include SP {
+          height: 150px;
+        }
       }
     }
     &__scroll {
@@ -28,6 +38,9 @@ body.top {
       right: 0;
       margin: auto;
       z-index: 2;
+      @include SP {
+        display: none;
+      }
       a {
         color: #fff;
         font-size: 14px;
@@ -68,10 +81,17 @@ body.top {
 
   #sec01 {
     padding-top: 30px;
+    @include SP {
+      padding-top: 10px;
+    }
     .flex-row {
       > div {
         width: 48%;
         position: relative;
+        @include SP {
+          width: 100%;
+          margin-top: 20px;
+        }
         &:before {
           z-index: 1;
           position: absolute;
@@ -94,24 +114,40 @@ body.top {
           font-weight: bold;
           @include letter-spacing(200);
           padding: 15px 0;
+          @include SP {
+            @include font-size(18);
+          }
         }
       }
     }
   }
   #sec02 {
     margin-top: 50px;
+    @include SP {
+      margin-top: 50px;
+    }
     ul {
       padding-right: 140px;
       margin-top: 30px;
+      @include SP {
+        padding-right: 0;
+        margin-top: 20px;
+      }
       li {
         @include font-size(18);
         color: #fff;
         display: inline-block;
         vertical-align: middle;
         @include letter-spacing(200);
+        @include SP {
+          @include font-size(14);
+        }
         &:nth-child(1) {
           width: 190px;
           position: relative;
+          @include SP {
+            width: 100%;
+          }
           &:before {
             content: "";
             width: 1px;
@@ -120,9 +156,15 @@ body.top {
             position: absolute;
             right: 30px;
             top: 0;
+            @include SP {
+              content: none;
+            }
           }
         }
         &:nth-child(2) {
+          @include SP {
+            margin-top: 10px;
+          }
         }
       }
     }
@@ -142,6 +184,12 @@ body.top {
         border-radius: 100px;
         line-height: 100px;
         @include letter-spacing(200);
+        @include SP {
+          bottom: -140px;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
       }
     }
   }
@@ -153,6 +201,11 @@ body.top {
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: right center;
+    @include SP {
+      background-position: right bottom;
+      background-size: 90%;
+      padding-bottom: 200px;
+    }
     .inner {
       p {
         margin-top: 80px;
@@ -161,15 +214,32 @@ body.top {
         @include letter-spacing(200);
         width: 42%;
         line-height: 1.6;
+        @include SP {
+          margin-top: 70px;
+          @include font-size(14);
+          color: #fff;
+          @include letter-spacing(100);
+          width: 100%;
+          line-height: 1.6;
+        }
       }
     }
   }
   #sec04 {
     margin-top: 150px;
+    @include SP {
+      margin-top: 80px;
+    }
     .infiniteslide {
       margin-top: 40px;
+      @include SP {
+        margin-top: 60px;
+      }
       img {
         width: 300px;
+        @include SP {
+          width: 180px;
+        }
       }
     }
     > p {
@@ -180,6 +250,11 @@ body.top {
       color: #fff;
       line-height: 1.6;
       margin-top: 40px;
+      @include SP {
+        width: 100%;
+        @include font-size(14);
+        padding: 0 15px;
+      }
     }
   }
   #sec05 {
@@ -193,12 +268,20 @@ body.top {
         color: #fff;
         line-height: 1.6;
         margin-top: 40px;
+        @include SP {
+          width: 100%;
+          @include font-size(14);
+          margin-top: 60px;
+        }
       }
       .flex-row {
         > a {
           display: block;
           width: 31.5%;
           margin-top: 40px;
+          @include SP {
+            width: 100%;
+          }
           > figure {
             > div {
               background-image: url(../images/top/event01.png);
@@ -243,6 +326,9 @@ body.top {
     background: #333333;
     position: relative;
     padding: 100px 0 150px;
+    @include SP {
+      padding: 50px 0 50px;
+    }
     &:before {
       content: "";
       width: 50%;
@@ -254,16 +340,29 @@ body.top {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      @include SP {
+        width: 100%;
+        height: 300px;
+      }
     }
     .inner {
       > div {
         width: 50%;
         padding-right: 80px;
+        @include SP {
+          width: 100%;
+          padding-top: 300px;
+          padding-right: 0;
+        }
         h3 {
           color: #fff;
           font-weight: bold;
           @include font-size(60);
           @include letter-spacing(200);
+          @include SP {
+            @include font-size(28);
+            @include letter-spacing(100);
+          }
         }
         p {
           color: #fff;
@@ -271,6 +370,10 @@ body.top {
           margin-top: 50px;
           @include letter-spacing(100);
           line-height: 1.6;
+          @include SP {
+            @include font-size(14);
+            margin-top: 20px;
+          }
         }
         a {
           display: block;

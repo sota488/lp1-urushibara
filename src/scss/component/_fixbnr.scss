@@ -3,6 +3,9 @@
   right: 0;
   top: 30%;
   z-index: 1000;
+  @include SP {
+    display: none;
+  }
   a {
     display: block;
     opacity: 1;

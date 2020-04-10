@@ -4,6 +4,9 @@
   @include letter-spacing(200);
   position: relative;
   color: #fff;
+  @include SP {
+    @include font-size(32);
+  }
   &:before {
     content: "";
     width: 100%;

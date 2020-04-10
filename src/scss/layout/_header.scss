@@ -24,12 +24,27 @@
   &__nav {
     @include SP {
       display: none;
+      position: fixed;
+      left: 0;
+      width: 100%;
+      top: 58px;
+      height: calc(100% - 58px);
+      background: #e4007f;
     }
     ul {
+      @include SP {
+        margin-top: 100px;
+      }
       li {
         display: inline-block;
         vertical-align: middle;
         margin-left: 45px;
+        @include SP {
+          margin-left: 0;
+          display: block;
+          text-align: center;
+          padding: 12px 0;
+        }
         a {
           display: block;
           color: #fff;
@@ -72,13 +87,34 @@
         left: 0;
         right: 0;
         margin: auto;
+        transition: all 0.3s;
         &:nth-child(1) {
           top: -12px;
+          @include transform(rotate(0));
         }
         &:nth-child(2) {
+          opacity: 1;
         }
         &:nth-child(3) {
           bottom: -12px;
+          @include transform(rotate(0));
+        }
+      }
+    }
+    &.on {
+      a {
+        span {
+          &:nth-child(1) {
+            top: 0;
+            @include transform(rotate(45deg));
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:nth-child(3) {
+            bottom: 0;
+            @include transform(rotate(-45deg));
+          }
         }
       }
     }
