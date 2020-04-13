@@ -192,6 +192,9 @@ input[type="button"] {
   @include SP {
     padding: 0 15px;
   }
+  &--small {
+    max-width: 1140px;
+  }
 }
 
 // .inner-large {

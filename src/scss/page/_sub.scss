@@ -1,0 +1,241 @@
+.sub {
+  &__main {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 545px;
+    @include SP {
+      height: 220px;
+    }
+    h2 {
+      color: #fff;
+      @include font-size(60);
+      font-weight: bold;
+      @include letter-spacing(200);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include transform(translateX(-50%) translateY(-50%));
+      @include SP {
+        @include font-size(32);
+      }
+    }
+  }
+
+  &__about01 {
+    padding-top: 65px;
+    @include SP {
+      padding-top: 35px;
+    }
+    .flex-row {
+      align-items: flex-start;
+      > div {
+        &:nth-child(1) {
+          width: 53%;
+          @include SP {
+            width: 100%;
+          }
+          h3 {
+            padding-top: 115px;
+            @include font-size(40);
+            color: #fff;
+            @include letter-spacing(200);
+            @include SP {
+              padding-top: 20px;
+              @include font-size(32);
+            }
+          }
+          p {
+            margin-top: 55px;
+            @include font-size(16);
+            line-height: 2;
+            color: #fff;
+            @include SP {
+              @include font-size(14);
+              margin-top: 20px;
+            }
+          }
+        }
+        &:nth-child(2) {
+          width: 40%;
+          @include SP {
+            display: none;
+          }
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  &__about02 {
+    margin-top: 100px;
+    padding: 70px 0;
+    background: #fff;
+    @include SP {
+      margin-top: 40px;
+      padding: 30px 0;
+    }
+    h3 {
+      text-align: center;
+      color: #e4007f;
+      em {
+        display: block;
+        @include font-size(32);
+        @include letter-spacing(200);
+        font-weight: bold;
+        @include SP {
+          @include font-size(20);
+        }
+      }
+      span {
+        @include font-size(40);
+        display: block;
+        @include letter-spacing(200);
+        font-weight: bold;
+        margin-top: 20px;
+        @include SP {
+          @include font-size(24);
+        }
+      }
+    }
+    p {
+      text-align: center;
+      color: #e4007f;
+      @include font-size(16);
+      line-height: 2.125;
+      margin-top: 50px;
+      @include SP {
+        @include font-size(14);
+        margin-top: 25px;
+        text-align: left;
+        padding: 0 15px;
+      }
+    }
+  }
+  &__about03 {
+    padding: 100px 0;
+    @include SP {
+      padding: 50px 0;
+    }
+    h3 {
+      text-align: center;
+      @include font-size(40);
+      color: #fff;
+      @include letter-spacing(200);
+      @include SP {
+        @include font-size(24);
+        line-height: 1.7;
+      }
+    }
+    p {
+      @include font-size(16);
+      line-height: 2.125;
+      color: #fff;
+      margin-top: 65px;
+      @include SP {
+        text-align: left;
+        @include font-size(14);
+        margin-top: 30px;
+      }
+    }
+  }
+  &__about04 {
+    background: #fff;
+    padding: 100px 0;
+    @include SP {
+      padding: 50px 0;
+    }
+    h3 {
+      text-align: center;
+      color: #e4007f;
+      @include font-size(40);
+      @include letter-spacing(200);
+      @include SP {
+        @include font-size(20);
+      }
+    }
+    table {
+      margin-top: 70px;
+      @include SP {
+        @include font-size(20);
+        margin-top: 20px;
+      }
+      @include SP {
+        display: block;
+      }
+      tr {
+        @include SP {
+          display: block;
+        }
+        td,
+        th {
+          padding: 15px 0;
+          @include font-size(16);
+          color: #e4007f;
+          @include letter-spacing(200);
+          line-height: 2;
+          border-bottom: 1px solid #e4007f;
+          @include letter-spacing(0);
+          @include SP {
+            display: block;
+            @include font-size(14);
+          }
+        }
+        th {
+          width: 200px;
+          @include SP {
+            width: 100px;
+            border-bottom: none;
+            padding-bottom: 0;
+          }
+        }
+        td {
+          @include SP {
+            padding-top: 0;
+          }
+          ul {
+            li {
+              display: inline-block;
+              vertical-align: middle;
+              padding-right: 40px;
+              line-height: 2;
+              position: relative;
+              &:before {
+                content: "";
+                width: 24px;
+                height: 1px;
+                background: #e4007f;
+                position: absolute;
+                @include transform(rotate(-45deg));
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &__about05 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #fff;
+    @include SP {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .inner {
+      iframe {
+        width: 100%;
+        height: 550px;
+        @include SP {
+          height: 350px;
+        }
+      }
+    }
+  }
+}
