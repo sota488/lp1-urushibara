@@ -242,6 +242,7 @@
   &__artist01 {
     padding-top: 80px;
     padding-bottom: 50px;
+    overflow: hidden;
     @include SP {
       padding-top: 50px;
     }
@@ -451,6 +452,94 @@
         color: #e4007f;
         @include font-size(16);
         @include letter-spacing(100);
+      }
+    }
+  }
+  &__eventmain {
+    .flex-row {
+      padding-top: 50px;
+      > div {
+        &:nth-child(1) {
+          width: 42%;
+          @include SP {
+            width: 100%;
+            order: 2;
+          }
+          h3 {
+            padding-top: 20px;
+            @include font-size(40);
+            @include letter-spacing(200);
+            color: #fff;
+            line-height: 2;
+            @include SP {
+              @include font-size(24);
+            }
+          }
+          p {
+            @include font-size(16);
+            color: #fff;
+            line-height: 2;
+            margin-top: 25px;
+            @include SP {
+              @include font-size(14);
+              margin-top: 15px;
+            }
+          }
+        }
+        &:nth-child(2) {
+          width: 50%;
+          @include SP {
+            order: 1;
+            width: 100%;
+          }
+          div {
+            width: 130%;
+            padding-top: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            @include SP {
+              width: 100%;
+              padding-top: 70%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .category {
+    text-align: center;
+    margin-top: 50px;
+    ul {
+      li {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 20px;
+        position: relative;
+        @include SP {
+          padding: 0 15px;
+        }
+        &:last-child {
+          &:before {
+            content: none;
+          }
+        }
+        &:before {
+          content: "";
+          height: 100%;
+          width: 1px;
+          background: #e4007f;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        a {
+          color: #e4007f;
+          @include font-size(17);
+          @include SP {
+            @include font-size(12);
+          }
+        }
       }
     }
   }
