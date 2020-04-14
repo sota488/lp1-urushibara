@@ -356,4 +356,102 @@
       }
     }
   }
+  &__detail-title {
+    padding: 50px 0;
+    @include SP {
+      padding: 25px 0;
+    }
+    h2 {
+      text-align: center;
+      position: relative;
+      &:before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        display: block;
+      }
+
+      span {
+        color: #fff;
+        font-weight: bold;
+        @include font-size(60);
+        @include letter-spacing(200);
+        @include SP {
+          @include font-size(32);
+        }
+      }
+    }
+  }
+  &__postcontent {
+    background: #fff;
+    h3 {
+      padding-top: 50px;
+      text-align: center;
+      @include font-size(40);
+      color: #e4007f;
+      @include letter-spacing(200);
+      @include SP {
+        @include font-size(24);
+        padding-top: 20px;
+      }
+    }
+    &__label {
+      text-align: center;
+      margin-top: 30px;
+      @include SP {
+        margin-top: 20px;
+      }
+      span {
+        color: #fff;
+        background: #e4007f;
+        @include font-size(16);
+        padding: 10px 15px;
+        @include SP {
+          @include font-size(14);
+          padding: 8px 10px;
+        }
+      }
+    }
+    &__content {
+      margin-top: 80px;
+      padding-bottom: 40px;
+      @include SP {
+        margin-top: 40px;
+        padding-bottom: 20px;
+      }
+      > img {
+        width: 100%;
+        display: block;
+        margin-top: 20px;
+      }
+      > p {
+        @include font-size(16);
+        line-height: 2;
+        margin-top: 20px;
+        @include SP {
+          @include font-size(14);
+        }
+        > img {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+    &__pager {
+      padding: 40px 0 100px;
+      @include SP {
+        padding: 30px 0 50px;
+      }
+      a {
+        color: #e4007f;
+        @include font-size(16);
+        @include letter-spacing(100);
+      }
+    }
+  }
 }

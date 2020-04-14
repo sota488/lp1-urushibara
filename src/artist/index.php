@@ -49,7 +49,7 @@ include($path.'libs/meta.php');
     <div class="sub__artist02">
       <h3>2020のアーティスト一覧</h3>
       <div class="inner inner--small flex-row">
-        <a href="#">
+        <a href="./detail.php">
           <figure>
             <div style="background-image:url(https://via.placeholder.com/805x500)"></div>
             <figcaption>
@@ -58,7 +58,7 @@ include($path.'libs/meta.php');
             </figcaption>
           </figure>
         </a>
-        <a href="#">
+        <a href="./detail.php">
           <figure>
             <div style="background-image:url(https://via.placeholder.com/805x500)"></div>
             <figcaption>
@@ -67,7 +67,7 @@ include($path.'libs/meta.php');
             </figcaption>
           </figure>
         </a>
-        <a href="#">
+        <a href="./detail.php">
           <figure>
             <div style="background-image:url(https://via.placeholder.com/805x500)"></div>
             <figcaption>
@@ -76,7 +76,7 @@ include($path.'libs/meta.php');
             </figcaption>
           </figure>
         </a>
-        <a href="#">
+        <a href="./detail.php">
           <figure>
             <div style="background-image:url(https://via.placeholder.com/805x500)"></div>
             <figcaption>
@@ -85,7 +85,7 @@ include($path.'libs/meta.php');
             </figcaption>
           </figure>
         </a>
-        <a href="#">
+        <a href="./detail.php">
           <figure>
             <div style="background-image:url(https://via.placeholder.com/805x500)"></div>
             <figcaption>
@@ -94,7 +94,7 @@ include($path.'libs/meta.php');
             </figcaption>
           </figure>
         </a>
-        <a href="#">
+        <a href="./detail.php">
           <figure>
             <div style="background-image:url(https://via.placeholder.com/805x500)"></div>
             <figcaption>
@@ -103,7 +103,7 @@ include($path.'libs/meta.php');
             </figcaption>
           </figure>
         </a>
-        <a href="#">
+        <a href="./detail.php">
           <figure>
             <div style="background-image:url(https://via.placeholder.com/805x500)"></div>
             <figcaption>
@@ -112,7 +112,7 @@ include($path.'libs/meta.php');
             </figcaption>
           </figure>
         </a>
-        <a href="#">
+        <a href="./detail.php">
           <figure>
             <div style="background-image:url(https://via.placeholder.com/805x500)"></div>
             <figcaption>
@@ -121,7 +121,7 @@ include($path.'libs/meta.php');
             </figcaption>
           </figure>
         </a>
-        <a href="#">
+        <a href="./detail.php">
           <figure>
             <div style="background-image:url(https://via.placeholder.com/805x500)"></div>
             <figcaption>
@@ -130,7 +130,7 @@ include($path.'libs/meta.php');
             </figcaption>
           </figure>
         </a>
-        <a href="#">
+        <a href="./detail.php">
           <figure>
             <div style="background-image:url(https://via.placeholder.com/805x500)"></div>
             <figcaption>
