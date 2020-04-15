@@ -15,17 +15,17 @@
         </a>
         <ul class="footer__sns">
           <li>
-            <a href="#" target="_blank">
+            <a href="https://www.facebook.com/pg/gakuenmae.af/posts/" target="_blank">
               <img src="<?php echo APP_URL; ?>images/common/facebook.png" alt="">
             </a>
           </li>
           <li>
-            <a href="#" target="_blank">
+            <a href="https://www.instagram.com/explore/tags/%E5%AD%A6%E5%9C%92%E5%89%8D%E3%82%A2%E3%83%BC%E3%83%88%E3%83%95%E3%82%A7%E3%82%B9%E3%82%BF/" target="_blank">
               <img src="<?php echo APP_URL; ?>images/common/instagram.png" alt="">
             </a>
           </li>
           <li>
-            <a href="#" target="_blank">
+            <a href="https://twitter.com/gakuenmae_af" target="_blank">
               <img src="<?php echo APP_URL; ?>images/common/twitter.png" alt="">
             </a>
           </li>
