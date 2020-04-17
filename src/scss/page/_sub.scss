@@ -341,6 +341,11 @@
               @include SP {
                 @include font-size(14);
               }
+              &.date {
+                background: #fff;
+                color: #e4007f;
+                padding: 0;
+              }
             }
             em {
               display: block;
@@ -353,6 +358,13 @@
               }
             }
           }
+        }
+      }
+    }
+    &.third-column {
+      .inner {
+        a {
+          width: 32%;
         }
       }
     }
@@ -415,6 +427,10 @@
         @include SP {
           @include font-size(14);
           padding: 8px 10px;
+        }
+        &.date {
+          color: #e4007f;
+          background: #fff;
         }
       }
     }
