@@ -82,7 +82,7 @@
       color: #e4007f;
       em {
         display: block;
-        @include font-size(32);
+        @include font-size(28);
         @include letter-spacing(200);
         font-weight: bold;
         @include SP {
@@ -90,7 +90,7 @@
         }
       }
       span {
-        @include font-size(40);
+        @include font-size(30);
         display: block;
         @include letter-spacing(200);
         font-weight: bold;
@@ -108,6 +108,20 @@
       margin-top: 50px;
       @include SP {
         @include font-size(14);
+        margin-top: 25px;
+        text-align: left;
+        padding: 0 15px;
+      }
+    }
+    small {
+      text-align: center;
+      color: #e4007f;
+      @include font-size(14);
+      line-height: 2.125;
+      margin-top: 50px;
+      display: block;
+      @include SP {
+        @include font-size(12);
         margin-top: 25px;
         text-align: left;
         padding: 0 15px;

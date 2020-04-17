@@ -36,6 +36,12 @@
     @include letter-spacing(200);
     background: #e4007f;
     transition: all 0.3s;
+    @include SP {
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      @include font-size(12);
+    }
     &:hover {
       background: #fff;
       color: #e4007f;

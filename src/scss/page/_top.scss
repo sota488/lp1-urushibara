@@ -129,12 +129,15 @@ body.top {
     ul {
       padding-right: 140px;
       margin-top: 30px;
+      @include PC {
+        min-height: 100px;
+      }
       @include SP {
         padding-right: 0;
         margin-top: 20px;
       }
       li {
-        @include font-size(18);
+        @include font-size(16);
         color: #fff;
         display: inline-block;
         vertical-align: middle;
@@ -189,6 +192,10 @@ body.top {
           left: 0;
           right: 0;
           margin: auto;
+          width: 70px;
+          height: 70px;
+          line-height: 70px;
+          @include font-size(12);
         }
       }
     }
@@ -209,7 +216,7 @@ body.top {
     .inner {
       p {
         margin-top: 80px;
-        @include font-size(18);
+        @include font-size(16);
         color: #fff;
         @include letter-spacing(200);
         width: 42%;
@@ -245,7 +252,7 @@ body.top {
     > p {
       max-width: 900px;
       margin: auto;
-      @include font-size(18);
+      @include font-size(16);
       @include letter-spacing(100);
       color: #fff;
       line-height: 1.6;

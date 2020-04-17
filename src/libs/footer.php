@@ -38,22 +38,22 @@
 
     <div class="footer__supporter">
       <div class="flex-row">
-        <a href="#"><img src="https://via.placeholder.com/435x160" alt=""></a>
-        <a href="#"><img src="https://via.placeholder.com/435x160" alt=""></a>
-        <a href="#"><img src="https://via.placeholder.com/435x160" alt=""></a>
-        <a href="#"><img src="https://via.placeholder.com/435x160" alt=""></a>
-        <a href="#"><img src="https://via.placeholder.com/435x160" alt=""></a>
-        <a href="#"><img src="https://via.placeholder.com/435x160" alt=""></a>
-        <a href="#"><img src="https://via.placeholder.com/435x160" alt=""></a>
-        <a href="#"><img src="https://via.placeholder.com/435x160" alt=""></a>
-        <a href="#"><img src="https://via.placeholder.com/435x160" alt=""></a>
-        <a href="#"><img src="https://via.placeholder.com/435x160" alt=""></a>
-        <a href="#"><img src="https://via.placeholder.com/435x160" alt=""></a>
-        <a href="#"><img src="https://via.placeholder.com/435x160" alt=""></a>
-        <a href="#"><img src="https://via.placeholder.com/435x160" alt=""></a>
-        <a href="#"><img src="https://via.placeholder.com/435x160" alt=""></a>
-        <a href="#"><img src="https://via.placeholder.com/435x160" alt=""></a>
-        <a href="#"><img src="https://via.placeholder.com/435x160" alt=""></a>
+        <a href="#"><img src="<?php echo APP_URL; ?>images/common/gakuenminami_bn.png" alt=""></a>
+        <a href="#"><img src="<?php echo APP_URL; ?>images/common/gakuenminami_bn.png" alt=""></a>
+        <a href="#"><img src="<?php echo APP_URL; ?>images/common/gakuenminami_bn.png" alt=""></a>
+        <a href="#"><img src="<?php echo APP_URL; ?>images/common/gakuenminami_bn.png" alt=""></a>
+        <a href="#"><img src="<?php echo APP_URL; ?>images/common/gakuenminami_bn.png" alt=""></a>
+        <a href="#"><img src="<?php echo APP_URL; ?>images/common/gakuenminami_bn.png" alt=""></a>
+        <a href="#"><img src="<?php echo APP_URL; ?>images/common/gakuenminami_bn.png" alt=""></a>
+        <a href="#"><img src="<?php echo APP_URL; ?>images/common/gakuenminami_bn.png" alt=""></a>
+        <a href="#"><img src="<?php echo APP_URL; ?>images/common/gakuenminami_bn.png" alt=""></a>
+        <a href="#"><img src="<?php echo APP_URL; ?>images/common/gakuenminami_bn.png" alt=""></a>
+        <a href="#"><img src="<?php echo APP_URL; ?>images/common/gakuenminami_bn.png" alt=""></a>
+        <a href="#"><img src="<?php echo APP_URL; ?>images/common/gakuenminami_bn.png" alt=""></a>
+        <a href="#"><img src="<?php echo APP_URL; ?>images/common/gakuenminami_bn.png" alt=""></a>
+        <a href="#"><img src="<?php echo APP_URL; ?>images/common/gakuenminami_bn.png" alt=""></a>
+        <a href="#"><img src="<?php echo APP_URL; ?>images/common/gakuenminami_bn.png" alt=""></a>
+        <a href="#"><img src="<?php echo APP_URL; ?>images/common/gakuenminami_bn.png" alt=""></a>
       </div>
     </div>
     <div class="footer__copy">
