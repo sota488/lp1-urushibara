@@ -3,6 +3,10 @@ $path = realpath(dirname(__FILE__) . '') . "/../../../../";
 include_once($path.'app_config.php');
 include($path.'/libs/meta.php');
 $getterms = get_terms('eventcat', array('hide_empty' => false));
+
+$queried_object = get_queried_object();
+// $queried_object は WP_Term Object 
+$term_id = $queried_object->term_id;
 ?>
 </head>
 
@@ -35,7 +39,7 @@ $getterms = get_terms('eventcat', array('hide_empty' => false));
               <p>イベント一覧に誘導するコメントが入ります。イベント一覧に誘導するコメントが入ります。イベント一覧に誘導するコメントが入ります。イベント一覧に誘導するコメントが入ります。イベント一覧に誘導するコメントが入ります。イベント一覧に誘導するコメントが入ります。イベント一覧に誘導するコメントが入ります。イベント一覧に誘導するコメントが入ります。イベント一覧に誘導するコメントが入ります。イベント一覧に誘導するコメントが入ります。イベント一覧に誘導するコメントが入ります。イベント一覧に誘導するコメントが入ります。イベント一覧に誘導するコメントが入ります。イベント一覧に誘導するコメントが入ります。イベント一覧に誘導するコメントが入ります。イベント一覧に誘導するコメントが入ります。イベント一覧に誘導するコメントが入ります。イベント一覧に誘導するコメントが入ります。イベント一覧に誘導するコメントが入ります。イベント一覧に誘導するコメントが入ります。イベント一覧に誘導するコメントが入ります。</p>
             </div>
             <div>
-              <div style="background-image: url(../images/event/event.jpg);"></div>
+              <div style="background-image: url(../../images/event/event.jpg);"></div>
             </div>
           </div>
         </div>
@@ -46,7 +50,7 @@ $getterms = get_terms('eventcat', array('hide_empty' => false));
       <h3>2020年のイベント開催情報</h3>
       <div class="category">
         <ul>
-          <li><a href=".">ALL</a></li>
+          <li><a href="<?php echo APP_URL; ?>event">ALL</a></li>
           <?php
             for ($i=0; $i < count($getterms); $i++) { 
               echo '<li><a href="'.APP_URL.'eventcat/'.$getterms[$i]->slug.'">'.$getterms[$i]->name.'</a></li>';
@@ -59,7 +63,14 @@ $getterms = get_terms('eventcat', array('hide_empty' => false));
 				// 新着ブログ設置
 				$query_args = array(
 					'post_type' => 'event',
-					'post_per_page' => 9
+          'post_per_page' => 9,
+          'tax_query' => array(
+            array(
+              'taxonomy' => 'eventcat',
+              'field' => 'id',
+              'terms' => array($term_id)
+            )
+          )
 				);
 				$query = new WP_Query( $query_args );
 				if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
@@ -75,7 +86,10 @@ $getterms = get_terms('eventcat', array('hide_empty' => false));
           </figure>
         </a>
 			<?php
-				endwhile;endif;
+        endwhile;
+      else:
+        echo '<p style="text-align: center;margin-top: 40px;display: block;width: 100%;">記事が見つかりませんでした。</p>';
+      endif;
 			?>
       </div>
     </div>
