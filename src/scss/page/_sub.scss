@@ -29,7 +29,7 @@
       padding-top: 35px;
     }
     .flex-row {
-      align-items: flex-start;
+      // align-items: flex-start;
       > div {
         &:nth-child(1) {
           width: 53%;
@@ -37,7 +37,7 @@
             width: 100%;
           }
           h3 {
-            padding-top: 115px;
+            padding-top: 40px;
             @include font-size(40);
             color: #fff;
             @include letter-spacing(200);
@@ -59,6 +59,9 @@
         }
         &:nth-child(2) {
           width: 40%;
+          background-image: url(../images/about/img01.jpg);
+          background-size: cover;
+          background-position: center;
           @include SP {
             display: none;
           }
