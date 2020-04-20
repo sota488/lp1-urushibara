@@ -1,8 +1,7 @@
 <?php
-$path = realpath(dirname(__FILE__) . '') . "/../../../../";
-include_once($path.'app_config.php');
-include($path.'/libs/meta.php');
-$getterms = get_terms('eventcat', array('hide_empty' => false));
+$path = realpath(dirname(__FILE__) . '/../../../../');
+include $path . '/app_config.php';
+include $path . '/libs/meta.php';
 ?>
 </head>
 
@@ -27,45 +26,22 @@ $getterms = get_terms('eventcat', array('hide_empty' => false));
 	<main>
     <div class="sub__artist01">
       <div class="inner">
-        <h2><span>EVENT</span></h2>
-        <div class="sub__eventmain">
-          <div class="flex-row">
-            <div>
-              <h3>学園前×芸術</h3>
-              <p>
-              アーティストと交流が生まれる子供を主な対象としたワークショップ、地域住民の作品展、児童・生徒による学園前ホールでの演奏会を開催します。また大和文華館での中高生による『野点』や中野美術館でのコンサートなど近隣施設と連携しながら来場者に気軽に文化芸術に触れていただき楽しんでいただけるように色々な企画を用意しています。大人、学生、子供たち、世代を超えて街全体で「学園前アートフェスタ」を盛り上げます。
-              </p>
-            </div>
-            <div>
-              <div style="background-image: url(../images/event/event.jpg);"></div>
-            </div>
-          </div>
-        </div>
+        <h2><span>REPORT</span></h2>
       </div>
     </div>
 
-    <div class="sub__artist02">
-      <h3>2020年のイベント開催情報</h3>
-      <div class="category">
-        <ul>
-          <li><a href=".">ALL</a></li>
-          <?php
-            for ($i=0; $i < count($getterms); $i++) { 
-              echo '<li><a href="'.APP_URL.'eventcat/'.$getterms[$i]->slug.'">'.$getterms[$i]->name.'</a></li>';
-            }
-          ?>
-        </ul>
-      </div>
+
+    <div class="sub__artist02 third-column">
       <div class="inner inner--small flex-row">
 			<?php
 				// 新着ブログ設置
 				$query_args = array(
-					'post_type' => 'event',
+					'post_type' => 'report',
 					'post_per_page' => 9
 				);
 				$query = new WP_Query( $query_args );
 				if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
-				$terms = get_the_terms($post->ID, 'eventcat');
+				$terms = get_the_terms($post->ID, 'reportcat');
 			?>
         <a href="<?php echo get_the_permalink(); ?>">
           <figure>

@@ -1,0 +1,137 @@
+.contact-body {
+  width: 790px;
+  margin: auto;
+  padding: 0;
+  margin-top: 80px;
+  @include SP {
+    width: 100%;
+    margin-top: 0px;
+    padding: 0 15px 50px;
+  }
+  form {
+    width: 100%;
+    table {
+      width: 100%;
+      @include SP {
+        display: block;
+      }
+      tbody {
+        @include SP {
+          display: block;
+        }
+      }
+      tr {
+        line-height: 1.7;
+        width: 100%;
+        @include SP {
+          display: block;
+        }
+        th,
+        td {
+          padding: 10px 0;
+          vertical-align: top;
+          @include SP {
+            padding: 5px 0;
+          }
+        }
+        th {
+          width: 220px;
+          @include font-size(18);
+          color: #fff;
+          @include SP {
+            @include font-size(15);
+            width: 100%;
+            display: block;
+          }
+        }
+        td {
+          @include font-size(18);
+          @include SP {
+            @include font-size(15);
+            display: block;
+            width: 100%;
+          }
+          p {
+            @include font-size(18);
+            color: #fff;
+            @include SP {
+              @include font-size(15);
+            }
+          }
+          input,
+          textarea {
+            padding: 0;
+            border: none;
+            border-radius: 0;
+            outline: none;
+            background: none;
+            background: #fff;
+            padding: 10px;
+            width: 100%;
+          }
+          input.s {
+            width: 80%;
+          }
+          textarea {
+            height: 500px;
+            @include SP {
+              height: 230px;
+            }
+          }
+        }
+      }
+    }
+    sup {
+      vertical-align: super;
+      font-size: smaller;
+    }
+  }
+  button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    display: block;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+    background: #fff;
+    margin-top: 40px;
+    span {
+      display: block;
+      width: 620px;
+      position: relative;
+      padding: 10px 0;
+      @include font-size(20);
+      font-weight: bold;
+      color: #e4007f;
+      z-index: 1;
+      @include SP {
+        width: 100%;
+        @include font-size(16);
+        padding: 10px 30px;
+      }
+      &:hover {
+        &:before {
+          top: 0;
+          left: 0;
+        }
+      }
+      &:before {
+        transition: all 0.3s;
+        content: "";
+        z-index: 0;
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        border: 1px solid #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.commonbtn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  display: block;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+  position: relative;
+  background: #fff;
+  margin-top: 40px;
+  span {
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 10px 0;
+    @include font-size(20);
+    font-weight: bold;
+    color: #e4007f;
+    z-index: 1;
+    @include SP {
+      width: 100%;
+      @include font-size(16);
+      padding: 10px 30px;
+    }
+    &:hover {
+      &:before {
+        top: 0;
+        left: 0;
+      }
+    }
+    &:before {
+      transition: all 0.3s;
+      content: "";
+      z-index: 0;
+      width: calc(100% - 2px);
+      height: calc(100% - 2px);
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      border: 1px solid #fff;
+    }
+  }
+}
