@@ -31,6 +31,7 @@
     > p {
       @include font-size(14);
       line-height: 2;
+      font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
     }
     > a {
       background: #fff;

@@ -175,6 +175,7 @@
     }
     table {
       margin-top: 70px;
+      width: 100%;
       @include SP {
         @include font-size(20);
         margin-top: 20px;
@@ -203,7 +204,7 @@
         th {
           width: 200px;
           @include SP {
-            width: 100px;
+            width: 100%;
             border-bottom: none;
             padding-bottom: 0;
           }
@@ -214,13 +215,12 @@
           }
           ul {
             li {
-              display: inline-block;
+              display: block;
               vertical-align: middle;
-              padding-right: 40px;
               line-height: 2;
               position: relative;
               &:before {
-                content: "";
+                // content: "";
                 width: 24px;
                 height: 1px;
                 background: #e4007f;
