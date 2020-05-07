@@ -101,6 +101,13 @@
         @include SP {
           @include font-size(24);
         }
+        em {
+          @include SP {
+            @include font-size(17);
+            margin-top: 15px;
+            @include letter-spacing(80);
+          }
+        }
       }
     }
     p {

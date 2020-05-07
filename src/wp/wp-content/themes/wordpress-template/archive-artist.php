@@ -31,17 +31,31 @@ include $path . '/libs/meta.php';
 
       <div class="infiniteslide">
 				<div><img src="../images/top/artist01.png" alt="" /></div>
-				<div><img src="../images/top/artist01.png" alt="" /></div>
-				<div><img src="../images/top/artist01.png" alt="" /></div>
-				<div><img src="../images/top/artist01.png" alt="" /></div>
-				<div><img src="../images/top/artist01.png" alt="" /></div>
-				<div><img src="../images/top/artist01.png" alt="" /></div>
-				<div><img src="../images/top/artist01.png" alt="" /></div>
-				<div><img src="../images/top/artist01.png" alt="" /></div>
-				<div><img src="../images/top/artist01.png" alt="" /></div>
+				<div><img src="../images/top/artist02.png" alt="" /></div>
+				<div><img src="../images/top/artist03.png" alt="" /></div>
+				<div><img src="../images/top/artist04.png" alt="" /></div>
+				<div><img src="../images/top/artist05.png" alt="" /></div>
+				<div><img src="../images/top/artist06.png" alt="" /></div>
+				<div><img src="../images/top/artist07.png" alt="" /></div>
+				<div><img src="../images/top/artist08.png" alt="" /></div>
+				<div><img src="../images/top/artist09.png" alt="" /></div>
+				<div><img src="../images/top/artist10.png" alt="" /></div>
+				<div><img src="../images/top/artist11.png" alt="" /></div>
+				<div><img src="../images/top/artist12.png" alt="" /></div>
+				<div><img src="../images/top/artist13.png" alt="" /></div>
+				<div><img src="../images/top/artist14.png" alt="" /></div>
+				<div><img src="../images/top/artist15.png" alt="" /></div>
+				<div><img src="../images/top/artist16.png" alt="" /></div>
+				<div><img src="../images/top/artist17.png" alt="" /></div>
+				<div><img src="../images/top/artist18.png" alt="" /></div>
+				<div><img src="../images/top/artist19.png" alt="" /></div>
+				<div><img src="../images/top/artist20.png" alt="" /></div>
 			</div>
       <div class="inner inner--small">
-        <p>アーティスト一覧に誘導するコメントが入ります。アーティスト一覧に誘導するコメントが入ります。アーティスト一覧に誘導するコメントが入ります。アーティスト一覧に誘導するコメントが入ります。アーティスト一覧に誘導するコメントが入ります。アーティスト一覧に誘導するコメントが入ります。アーティスト一覧に誘導するコメントが入ります。アーティスト一覧に誘導するコメントが入ります。アーティスト一覧に誘導するコメントが入ります。アーティスト一覧に誘導するコメントが入ります。</p>
+        <p>学園前アートフェスタでは関西を中心に全国から個性豊かな現代アーティストが参加します。<br>
+公募部門ではポートフォリオ審査だけでなく、事前展示会を設けて地域住民を含め多くの方からの投票によって選別されます。そのことにより作家を多くの<br class="pc">
+方に知ってもらう機会を作るのと同時に、住民もまた現代アートに触れ、作家との交流が生まれ、街の活性化へと導いています。<br>
+今季、招聘作家と公募作家からなる 20 名のアーティストたちを紹介します～</p>
       </div>
     </div>
 
